@@ -1,0 +1,5 @@
+name: EffectPlugin
+main: Harry\EffectPlugin\EffectPlugin
+version: 1.0.0
+author: Harry
+api: 4.0.0
