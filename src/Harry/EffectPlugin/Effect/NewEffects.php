@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 
 namespace Harry\EffectPlugin\Effect;
 
@@ -16,7 +17,7 @@ use pocketmine\utils\RegistryTrait;
  * @method static VillageHeroEffect BAD_OMEN()
  * @method static VillageHeroEffect VILLAGE_HERO()
  */
-final class NewEffects
+class NewEffects
 {
     use RegistryTrait;
     

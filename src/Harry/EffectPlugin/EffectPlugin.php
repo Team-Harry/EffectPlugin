@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 
 namespace Harry\EffectPlugin;
 
@@ -11,7 +12,7 @@ use pocketmine\entity\effect\StringToEffectParser;
 
 use pocketmine\plugin\PluginBase;
 
-final class EffectPlugin extends PluginBase
+class EffectPlugin extends PluginBase
 {
     /** @var EffectPlugin $instance */
     protected static EffectPlugin $instance;
