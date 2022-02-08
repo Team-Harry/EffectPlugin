@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types = 1);
 
 namespace Harry\EffectPlugin;
@@ -18,7 +17,7 @@ final class EffectPlugin extends PluginBase
     /** @var EffectPlugin $instance */
     protected static EffectPlugin $instance;
     
-    public function onLoad(): void
+    protected function onLoad(): void
     {
         self::$instance = $this;
     }
@@ -26,7 +25,7 @@ final class EffectPlugin extends PluginBase
     {
         return self::$instance;
     }
-    public function onEnable(): void
+    protected function onEnable(): void
     {
         EffectIdMap::getInstance()->register(EffectIds::SLOW_FALLING,NewEffects::SLOW_FALLING());
         EffectIdMap::getInstance()->register(EffectIds::BAD_OMEN,NewEffects::BAD_OMEN());
