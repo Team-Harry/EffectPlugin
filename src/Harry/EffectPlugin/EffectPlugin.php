@@ -14,8 +14,8 @@ use pocketmine\plugin\PluginBase;
 
 class EffectPlugin extends PluginBase
 {
-    /** @var EffectPlugin $instance */
-    protected static EffectPlugin $instance;
+    /** @var self $instance */
+    protected static self $instance;
     
     protected function onLoad(): void
     {
